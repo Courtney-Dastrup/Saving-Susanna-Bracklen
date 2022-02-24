@@ -1,0 +1,118 @@
+/* Must use the following CSS attributes
+    flexbox
+    background-image
+    color
+    font-family
+Must use at least one font from google fonts */
+html, body, h1, h2, h3, p, a {
+    font-family: "Architects Daughter", sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #1b0909 url(images/placeholder.jpg) top center no-repeat;
+    background-size: auto 100vh;
+}
+.coverscreen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+    nav{
+        position: absolute;
+        top: 10px;
+        display: flex;
+        padding: 15px 0 2px 0;
+        border-bottom: 2px solid #6dff6d;
+        width: 95%;
+    }
+        nav a {
+            text-decoration: none;
+            color: #6dff6d;
+            margin: 0 20px;
+        }
+            nav a:first-child{
+                margin-left: 0;
+                margin-right: auto;
+            }
+            nav a:last-child{
+                margin-right: 0;
+            }
+    h1 {
+        font-size: 4em;
+        font-weight: bolder;
+        color: #6dff6d;
+        padding: 20px;
+        border-bottom: 2px solid #6dff6d;
+    }
+    h2 {
+        font-size: 2em;
+        color: #6dff6d;
+        padding: 20px;
+        font-weight: lighter;
+    }
+h3 {
+    color: #6dff6d;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+p {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    text-align: left;
+}
+.mission, .inspiration, .contact {
+    background-image: linear-gradient(0deg, #000000 0%, #1b0909 100%);
+}
+    .mission {
+        display: flex;
+    }
+    .mission img {
+        height:auto;
+        width: 30%;
+    }
+    .missionText {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 20px;
+        margin: 70px;
+    }
+    .inspiration {
+        display: flex;
+    }
+    .inspiration img {
+        height:auto;
+        width: 40%;
+    }
+    .inspirationText {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 20px;
+        margin: 70px;
+    }
+    .contact {
+        display: flex;
+    }
+    .contact img {
+        height:auto;
+        width: 30%;
+    }
+    .contactText {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 20px;
+        margin: 70px;
+    }
